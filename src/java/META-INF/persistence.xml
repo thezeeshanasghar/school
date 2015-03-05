@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="pu" transaction-type="JTA">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+       
+    <class>com.school.domain.Address</class>
+    <class>com.school.domain.Branch</class>
+    <class>com.school.domain.Classs</class>
+    <class>com.school.domain.Contact</class>
+    <class>com.school.domain.ContractualStaff</class>
+    <class>com.school.domain.ParentGuardian</class>
+    <class>com.school.domain.PermanentStaff</class>
+    <class>com.school.domain.School</class>
+    <class>com.school.domain.Student</class>
+    <class>com.school.domain.Subject</class>
+    <class>com.school.domain.Teacher</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="https://mysql13986-kgszeej2.appengine.flow.ch/test"/>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/test?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <!--<property name="javax.persistence.jdbc.user" value="test"/>-->
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <!--<property name="javax.persistence.jdbc.password" value="test"/>-->
+      <property name="javax.persistence.jdbc.password" value="TxVoPyO5Ja"/>
+<!--      <property name="javax.persistence.jdbc.password" value="test" />-->
+      <property name="javax.persistence.schema-generation.database.action" value="create"/>
+      <!--<property name="eclipselink.logging.level" value="FINE"/>-->
+      <!--<property name="javax.persistence.sql-load-script-source" value="META-INF/load.sql"/>-->
+    </properties>
+  </persistence-unit>
+</persistence>
